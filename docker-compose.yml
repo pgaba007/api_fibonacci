@@ -1,0 +1,9 @@
+# Copyright: 2020 Arm Ltd. All Rights Reserved.
+
+version: '3'
+services:
+  fibonacci-api:
+    build: ./fibonacci-api
+    image: cepe-fibonacci-api:test
+    ports:
+      - 8080:8080
