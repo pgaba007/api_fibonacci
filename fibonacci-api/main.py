@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 def fibonacci(order: int):
@@ -23,13 +23,20 @@ def recursive_fibonacci(order: int):
 @app.route("/fibonacci")
 def send_fibo():      #error handling
     try:
-        return str(fibonacci(int(request.args['order'])))
+        return jsonify(
+		order=str(request.args['order']),
+		value=str(fibonacci(int(request.args['order']))),
+	)
     except ValueError:
         return "Please use a number for the order argument"
 
 @app.route("/recursive_fibonacci")
 def send_rec_fibo():
     try:
-        return str(recursive_fibonacci(int(request.args['order'])))
+        return jsonify(
+		order=str(request.args['order']),
+                value=str(recursive_fibonacci(int(request.args['order']))),
+	)
     except ValueError:
         return "Please use a number for the order argument"
+
