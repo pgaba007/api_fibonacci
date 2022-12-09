@@ -116,3 +116,10 @@ to be enabled in the BIOS. The
 [docker docs](https://docs.docker.com/docker-for-windows/install/) are helpful but you
 may prefer to set up a linux virtual machine on your computer (e.g. using VirtualBox),
 or use a [free AWS EC2 instance](https://aws.amazon.com/free) instead.
+
+
+
+SOLUTION:
+#made a virtual machine on Oracle virtual box and performed task 3 i.e. Implement an app which has equivalent functionality in a language of your choice
+#Used flask in python to quickly implement the code and installed docker on server to apply containerization to the code.
+#main.py
