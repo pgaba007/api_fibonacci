@@ -1,11 +1,8 @@
-# CEPE Software Engineering Technical Assessment
-
-This technical assessment forms part of the interview process for a software
-engineering role inside Central Engineering - Productivity Engineering (CEPE)
-at Arm. It is based around a small demo program that exposes an HTTP API to
+# Python flask based app and api call
+This project is based around a small demo that exposes an HTTP API to
 return requested values from the Fibonacci sequence.
 
-We have packaged it up with a Docker build environment to make it easier for
+I have packaged it up with a Docker build environment to make it easier for
 you to build and run. In order to run it, you'll need to have the `docker`
 and `docker-compose` command line tools installed. You will also need a way
 of making requests to an HTTP API. On Unix systems such as Linux and OSX, the
@@ -14,8 +11,7 @@ need to install curl or another tool
 (such as [Postman](https://www.postman.com/downloads/)) to interact with the
 HTTP API.
 
-Before you start the tasks, it would be worth familiarising yourself with
-the demo application. The following shows how to start it up, and a couple
+it would be worth familiarising yourself with the demo app. The following shows how to start it up, and a couple
 of example queries:
 
 ```
@@ -40,14 +36,8 @@ docker-compose down
 ## Tasks
 
 Now that you are familiar with the demo app and have managed to build and run
-it, here are some tasks for you to attempt. We would like to see an attempt
-at one of them. Have a read through and choose the task that interests you the
+it, here are some tasks for you to attempt. Have a read through and choose the task that interests you the
 most, and/or the task which will best let you exibit your skills.
-
-Once you have completed your task, please re-compress the entire `fibonacci-api`
-directory and send it back to us. Ahead of the interview, we will look through
-your code, and during the interview we will go through your solution together
-and ask some questions about it.
 
 ### Add Recursive Endpoint to Demo App
 
@@ -102,12 +92,6 @@ Your re-implementation should satisfy the following constraints:
 
 You may also want to add the `/recursive-fibonacci` endpoint to your implementation.
 
-## A Note on Expected Duration
-
-Whichever task you have chosen, we don't expect you to spend more than a couple
-of hours on your solution: it should fit comfortably into one evening, so please
-don't spend a week refactoring your code!
-
 ## A note for Windows Users
 
 Installing Docker Desktop is a little more involved on Windows as it requires the
@@ -118,8 +102,7 @@ may prefer to set up a linux virtual machine on your computer (e.g. using Virtua
 or use a [free AWS EC2 instance](https://aws.amazon.com/free) instead.
 
 
-
-SOLUTION:
-#made a virtual machine on Oracle virtual box and performed task 3 i.e. Implement an app which has equivalent functionality in a language of your choice
-#Used flask in python to quickly implement the code and installed docker on server to apply containerization to the code.
-#main.py
+# On top
+# I have made a virtual machine on Oracle virtual box and performed task 3 i.e. Implement an app which has equivalent functionality in a language of your choice
+# Used flask in python to quickly implement the code and installed docker on server to apply containerization to the code.
+# main.py
